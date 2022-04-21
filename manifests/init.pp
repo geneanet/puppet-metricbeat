@@ -187,6 +187,7 @@ class metricbeat (
   Boolean $manage_repo                                                = $metricbeat::params::manage_repo,
   String $package_ensure                                              = $metricbeat::params::package_ensure,
   Optional[Array[Hash]] $processors                                   = $metricbeat::params::processors,
+  Optional[Hash]  $monitoring                                         = undef,
   Optional[Variant[Stdlib::HTTPUrl, Stdlib::HTTPSUrl]] $proxy_address = $metricbeat::params::proxy_address,
   Hash $queue                                                         = $metricbeat::params::queue,
   Integer $queue_size                                                 = $metricbeat::params::queue_size,
